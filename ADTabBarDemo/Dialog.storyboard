@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="l7X-df-zuU">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--蓝信-->
+        <scene sceneID="tGd-nP-Xzv">
+            <objects>
+                <tableViewController title="蓝信" id="4iw-n5-NmM" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="UC5-6c-1rk">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rBr-j0-sD0">
+                                <rect key="frame" x="0.0" y="92" width="300" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rBr-j0-sD0" id="Xd0-Ru-Wu9">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4iw-n5-NmM" id="X8M-mG-iQo"/>
+                            <outlet property="delegate" destination="4iw-n5-NmM" id="FwQ-xi-lZ9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="蓝信" id="9gR-Qw-LbQ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2V1-Jz-h46" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="286" y="345"/>
+        </scene>
+        <!--蓝信-->
+        <scene sceneID="uHu-oh-TJu">
+            <objects>
+                <navigationController title="蓝信" id="l7X-df-zuU" customClass="ADNavigationController" customModule="ADTabBarDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="蓝信" id="xcC-p8-K80"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="300" height="300"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bz0-02-r6x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4iw-n5-NmM" kind="relationship" relationship="rootViewController" id="J3N-OT-zr6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J1v-If-0wA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130" y="345"/>
+        </scene>
+    </scenes>
+</document>
